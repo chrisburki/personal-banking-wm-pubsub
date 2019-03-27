@@ -2,7 +2,6 @@ package pubsub.application;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import pubsub.domain.publisher.Publisher;
 
 @Service
 public class PublisherService {
@@ -10,7 +9,7 @@ public class PublisherService {
     @Value(value = "${message.topic.name}")
     private String topicName;
 
-    private final Publisher publisher;
+/*    private final Publisher publisher;
 
     public PublisherService(Publisher publisher) {
         this.publisher = publisher;
@@ -18,5 +17,5 @@ public class PublisherService {
 
     public void sendMessage(String message) {
        this.publisher.publish(message);
-    }
+    }*/
 }
