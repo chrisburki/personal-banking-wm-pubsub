@@ -4,10 +4,8 @@ import com.google.cloud.pubsub.v1.Subscriber;
 import org.springframework.cloud.gcp.pubsub.PubSubAdmin;
 import org.springframework.cloud.gcp.pubsub.core.PubSubTemplate;
 import org.springframework.cloud.gcp.pubsub.support.AcknowledgeablePubsubMessage;
-import org.springframework.scheduling.support.SimpleTriggerContext;
 import org.springframework.util.concurrent.ListenableFuture;
 import org.springframework.web.bind.annotation.*;
-import pubsub.application.PublisherService;
 
 import java.util.ArrayList;
 import java.util.Collection;
